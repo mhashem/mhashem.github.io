@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Hachem | Software Architecture & Enterprise Solutions Consultant</title>
+  <meta name="description" content="Senior Software Engineering Leader & Consultant specializing in Event-Driven Architecture, High-Scale Distributed Systems, Monolith-to-Microservices Modernization, and Cloud Optimization.">
+  <meta name="keywords" content="Mahmoud Hachem, Software Architect, Solution Architect, Enterprise Solutions, Distributed Systems, Apache Kafka, Kafka Streams, Spring Boot, Microservices, BFF Pattern, Cloud Architecture">
+  <meta name="author" content="Mahmoud Hachem">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mhashem.github.io/">
+  <meta property="og:title" content="Mahmoud Hachem | Software Architecture & Enterprise Solutions Consultant">
+  <meta property="og:description" content="Architecting high-scale distributed backends, event-driven streaming platforms, and modernizing enterprise platforms for healthcare and global enterprise clients.">
+  <meta property="og:image" content="https://mhashem.github.io/assets/img/avatar.jpg">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mhashem.github.io/">
+  <meta property="twitter:title" content="Mahmoud Hachem | Software Architecture & Enterprise Solutions Consultant">
+  <meta property="twitter:description" content="Architecting high-scale distributed backends, event-driven streaming platforms, and modernizing enterprise platforms.">
+  <meta property="twitter:image" content="https://mhashem.github.io/assets/img/avatar.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- JSON-LD Structured Data for Executive / Consultant Profile -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mahmoud Hachem",
+    "jobTitle": "Software Architecture Consultant & Engineering Leader",
+    "url": "https://mhashem.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/hachemmahmoud/",
+      "https://github.com/mhashem"
+    ],
+    "knowsAbout": [
+      "Software Architecture",
+      "Enterprise Solution Architecture",
+      "Distributed Systems",
+      "Event-Driven Architecture",
+      "Apache Kafka",
+      "Kafka Streams",
+      "Java & Spring Boot",
+      "Cloud Migration & FinOps",
+      "Microservices & BFF Pattern"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Lebanese University"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       Site Header & Navigation
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" aria-label="Mahmoud Hachem Home">
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 64 64" fill="none">
+            <path d="M16 46V18L26 33L36 18V46" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M42 18V46M42 32H52M52 18V46" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Mahmoud Hachem</span>
+          <span class="brand-role">Architecture & Advisory</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#services" class="nav-link">Advisory</a></li>
+          <li><a href="#blueprints" class="nav-link">Architecture</a></li>
+          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+          <li><a href="#experience" class="nav-link">Track Record</a></li>
+          <li><a href="#tech-radar" class="nav-link">Tech Radar</a></li>
+          <li><a href="#engagement" class="nav-link">Engagement</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Color Theme" title="Switch Theme">
+          <svg id="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary">Book Consultation</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       Hero Section
+       ====================================================================== -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <span class="badge badge-emerald">
+            <span class="badge-pulse"></span>
+            Available for Strategic Advisory & Architecture Consulting
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Architecting High-Scale <br>
+          <span class="gradient-text">Distributed Systems</span> & <br>
+          Enterprise Platforms.
+        </h1>
+
+        <p class="hero-description">
+          12+ years designing mission-critical event-driven architectures, modernizing legacy monoliths, and scaling backend platforms across regulated healthcare (Fortune 15) and global enterprise sectors.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary">
+            <span>Schedule Advisory Call</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="assets/Mahmoud_Hachem_CV.pdf" target="_blank" class="btn btn-secondary" title="Download Mahmoud Hachem CV (PDF)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Executive CV</span>
+          </a>
+
+          <button class="btn btn-outline btn-copy-email" title="Copy email address to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <div class="stat-value">12<span class="accent">+</span></div>
+            <div class="stat-label">Years of Distributed Engineering & Leadership</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">~65<span class="accent">%</span></div>
+            <div class="stat-label">Annual OpEx Reduction via Cloud Kafka Modernization</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">1,000<span class="accent">s</span></div>
+            <div class="stat-label">U.S. Hospitals Powered by Mission-Critical Stream Platforms</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">F15 <span class="accent">&amp;</span> Swiss</div>
+            <div class="stat-label">Enterprise & Healthcare Production Pedigree</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Profile Card -->
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <img src="assets/img/avatar.jpg" alt="Mahmoud Hachem - Software Architect" class="avatar-image">
+          </div>
+          <div class="profile-meta">
+            <h2 class="profile-name">Mahmoud Hachem</h2>
+            <p class="profile-title">Software Engineering Leader & Solutions Architect</p>
+            
+            <div class="profile-tags">
+              <span class="tag-chip">Event-Driven Architecture</span>
+              <span class="tag-chip">Apache Kafka</span>
+              <span class="tag-chip">BFF & Gateways</span>
+              <span class="tag-chip">Microservices</span>
+              <span class="tag-chip">Java / Spring Boot</span>
+              <span class="tag-chip">FinOps & Cloud</span>
+            </div>
+
+            <ul class="profile-details-list">
+              <li class="profile-detail-row">
+                <span class="detail-label">Current Role</span>
+                <span class="detail-value">Eng Team Lead @ Cardinal Health</span>
+              </li>
+              <li class="profile-detail-row">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Beirut, Lebanon / Global Remote</span>
+              </li>
+              <li class="profile-detail-row">
+                <span class="detail-label">Education</span>
+                <span class="detail-value">Master &amp; Bachelor in Computer Science</span>
+              </li>
+              <li class="profile-detail-row">
+                <span class="detail-label">Consulting Focus</span>
+                <span class="detail-value">Architecture Modernization &amp; Advisory</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Consulting & Advisory Services Section
+       ====================================================================== -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Consulting &amp; Advisory Offerings</span>
+        <h2 class="section-title">Strategic Architecture &amp; Engineering Consulting</h2>
+        <p class="section-subtitle">
+          Bridging technical rigor with executive business impact. Delivering enterprise-grade reliability, reducing cloud operational expenditure, and establishing clean decoupled architectures.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <line x1="8" y1="6" x2="16" y2="6"></line>
+                <line x1="8" y1="10" x2="16" y2="10"></line>
+              </svg>
+            </div>
+            <span class="service-num">01</span>
+          </div>
+          <h3 class="service-title">Enterprise Architecture &amp; System Modernization</h3>
+          <p class="service-description">
+            Pragmatic transition strategies to decompose legacy monoliths into scalable service ecosystems without operational downtime or delivery stalls.
+          </p>
+          <ul class="service-deliverables">
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Domain-Driven Design (DDD) &amp; boundary mapping</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>C4 model architecture diagrams &amp; RFC frameworks</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phased strangler-fig migration roadmaps</span>
+            </li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag">Monolith Decomposition</span>
+            <span class="service-tag">C4 Model</span>
+            <span class="service-tag">DDD</span>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <span class="service-num">02</span>
+          </div>
+          <h3 class="service-title">Event-Driven Architecture &amp; Real-Time Streaming</h3>
+          <p class="service-description">
+            Architecting fault-tolerant streaming backbones with Apache Kafka and Flink to power real-time analytics, event mesh, and high-throughput data pipelines.
+          </p>
+          <ul class="service-deliverables">
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Kafka cluster sizing, partitioning &amp; schema registry</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Kafka Streams &amp; Flink stateful stream processing</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Elasticsearch &amp; analytical sink integration</span>
+            </li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag">Apache Kafka</span>
+            <span class="service-tag">Kafka Streams</span>
+            <span class="service-tag">Confluent Cloud</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <span class="service-num">03</span>
+          </div>
+          <h3 class="service-title">Backend-for-Frontend (BFF) &amp; API Gateway Topology</h3>
+          <p class="service-description">
+            Designing clean entry layers to isolate core domain services, streamline multi-client frontends, and enable team autonomy with independent deployment cadences.
+          </p>
+          <ul class="service-deliverables">
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>BFF pattern implementation for web, mobile &amp; partners</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>API Gateway routing, rate limiting &amp; auth offloading</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Decoupled client contracts &amp; schema evolution</span>
+            </li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag">BFF Pattern</span>
+            <span class="service-tag">API Gateway</span>
+            <span class="service-tag">Spring Boot</span>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <span class="service-num">04</span>
+          </div>
+          <h3 class="service-title">Cloud Infrastructure Rationalization &amp; FinOps</h3>
+          <p class="service-description">
+            Auditing expensive, unmanaged infrastructure and orchestrating zero-downtime migrations to managed cloud services—proven ~65% annual cost reduction.
+          </p>
+          <ul class="service-deliverables">
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Self-hosted to managed cloud platform migrations</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Infrastructure footprint audits &amp; right-sizing</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>High availability, SLA &amp; disaster recovery design</span>
+            </li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag">FinOps</span>
+            <span class="service-tag">Cost Reduction</span>
+            <span class="service-tag">Confluent Cloud</span>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <span class="service-num">05</span>
+          </div>
+          <h3 class="service-title">Fractional Architecture Lead &amp; Governance</h3>
+          <p class="service-description">
+            Providing high-leverage technical leadership, architectural decision governance (ADRs), and mentoring engineering teams to ship reliable software faster.
+          </p>
+          <ul class="service-deliverables">
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Architectural Review Board (ARB) &amp; ADR governance</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Structured 1:1 coaching (OTTT/SMART frameworks)</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>CI/CD automation, testing &amp; release engineering bars</span>
+            </li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag">Team Leadership</span>
+            <span class="service-tag">Mentoring</span>
+            <span class="service-tag">CI/CD &amp; QA</span>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <span class="service-num">06</span>
+          </div>
+          <h3 class="service-title">Regulated &amp; High-Assurance Solutions</h3>
+          <p class="service-description">
+            Architecting solutions for highly regulated healthcare (HIPAA compliant) and European customs/compliance systems requiring cryptographic integrity.
+          </p>
+          <ul class="service-deliverables">
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cryptographic signing &amp; security-critical data flow</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Audit logging, compliance &amp; data lineage tracing</span>
+            </li>
+            <li class="deliverable-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Zero-trust service-to-service communication</span>
+            </li>
+          </ul>
+          <div class="service-tags">
+            <span class="service-tag">Healthcare Systems</span>
+            <span class="service-tag">Digital Signatures</span>
+            <span class="service-tag">Security &amp; Compliance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Interactive Architecture Blueprints
+       ====================================================================== -->
+  <section id="blueprints" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Interactive System Blueprints</span>
+        <h2 class="section-title">Architectural Patterns in Production</h2>
+        <p class="section-subtitle">
+          Explore architectural topologies I have designed and delivered in high-throughput enterprise environments.
+        </p>
+      </div>
+
+      <div class="blueprint-explorer">
+        <div class="blueprint-tabs" role="tablist">
+          <button class="blueprint-tab-btn active" data-tab="eda" role="tab" aria-selected="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            <span>Event-Driven Analytics Mesh</span>
+          </button>
+          <button class="blueprint-tab-btn" data-tab="bff" role="tab" aria-selected="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect></svg>
+            <span>BFF &amp; Decoupled Gateway</span>
+          </button>
+          <button class="blueprint-tab-btn" data-tab="cloud" role="tab" aria-selected="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            <span>Cloud Streaming Migration (~65% OpEx)</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Event-Driven Analytics Mesh -->
+        <div class="blueprint-tab-content active" id="tab-eda">
+          <div class="blueprint-diagram-wrap">
+            <div class="diagram-canvas">
+              <div class="diagram-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                <div class="diagram-node-title">Hospital Data Sources</div>
+                <div class="diagram-node-desc">Thousands of U.S. hospital clinical feeds</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Ingest</span>
+                <div class="connector-line"></div>
+                <span>JSON/Avro</span>
+              </div>
+
+              <div class="diagram-node highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div class="diagram-node-title">Apache Kafka Event Bus</div>
+                <div class="diagram-node-desc">Partitioned event topics &amp; schema validation</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Stream</span>
+                <div class="connector-line"></div>
+                <span>Stateful</span>
+              </div>
+
+              <div class="diagram-node highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <div class="diagram-node-title">Kafka Streams / Flink</div>
+                <div class="diagram-node-desc">Aggregation, joins &amp; windowed projection</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Sink</span>
+                <div class="connector-line"></div>
+                <span>Sync</span>
+              </div>
+
+              <div class="diagram-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                <div class="diagram-node-title">Elasticsearch &amp; Query APIs</div>
+                <div class="diagram-node-desc">Sub-second hospital executive reporting</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blueprint-meta-grid">
+            <div class="blueprint-narrative">
+              <h4>Mission-Critical Event-Driven Platform at Cardinal Health</h4>
+              <p>
+                Engineered to replace monolithic reporting bottlenecks. By decoupling raw transactional hospital inputs into append-only Kafka topics and leveraging Kafka Streams with Elasticsearch, down-stream reporting services gained instant sub-second query responsiveness without placing load on core transaction systems.
+              </p>
+              <div class="profile-tags" style="justify-content: flex-start;">
+                <span class="tag-chip">Apache Kafka</span>
+                <span class="tag-chip">Kafka Streams</span>
+                <span class="tag-chip">Kafka Connect</span>
+                <span class="tag-chip">Elasticsearch</span>
+                <span class="tag-chip">Java &amp; Spring Boot</span>
+              </div>
+            </div>
+            <div class="blueprint-takeaways">
+              <h5>Architectural Value</h5>
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 99.99% Availability under clinical traffic spikes</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero transactional lock contention on write paths</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-team autonomy via schema contracts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: BFF & Decoupled Gateway -->
+        <div class="blueprint-tab-content" id="tab-bff">
+          <div class="blueprint-diagram-wrap">
+            <div class="diagram-canvas">
+              <div class="diagram-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                <div class="diagram-node-title">Clients (Web, Mobile, B2B)</div>
+                <div class="diagram-node-desc">Diverse client consumer needs</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>HTTPS</span>
+                <div class="connector-line"></div>
+                <span>mTLS</span>
+              </div>
+
+              <div class="diagram-node highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <div class="diagram-node-title">API Gateway</div>
+                <div class="diagram-node-desc">Routing, Auth offload, Rate limiting</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Route</span>
+                <div class="connector-line"></div>
+                <span>Internal</span>
+              </div>
+
+              <div class="diagram-node highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect></svg>
+                <div class="diagram-node-title">Backend-For-Frontend (BFF)</div>
+                <div class="diagram-node-desc">Aggregated payloads tailored per device</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>gRPC / REST</span>
+                <div class="connector-line"></div>
+                <span>Async</span>
+              </div>
+
+              <div class="diagram-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <div class="diagram-node-title">Microservice Domains</div>
+                <div class="diagram-node-desc">Order, Inventory, Billing, Clinical</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blueprint-meta-grid">
+            <div class="blueprint-narrative">
+              <h4>Backend-For-Frontend (BFF) &amp; Gateway Decoupling</h4>
+              <p>
+                Eliminates frontend-backend lockstep dependencies. Microservices focus strictly on domain logic and transactional integrity, while the BFF aggregates data models, optimizing over-the-wire payloads for mobile, web, and external hospital integration partners.
+              </p>
+              <div class="profile-tags" style="justify-content: flex-start;">
+                <span class="tag-chip">BFF Architecture</span>
+                <span class="tag-chip">Spring Cloud Gateway</span>
+                <span class="tag-chip">Domain Boundaries</span>
+                <span class="tag-chip">Independent Releases</span>
+              </div>
+            </div>
+            <div class="blueprint-takeaways">
+              <h5>Architectural Value</h5>
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Frontend teams iterate independently without backend blocker</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Drastic payload size reduction for mobile applications</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Centralized token verification, telemetry &amp; security</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Cloud Streaming Migration -->
+        <div class="blueprint-tab-content" id="tab-cloud">
+          <div class="blueprint-diagram-wrap">
+            <div class="diagram-canvas">
+              <div class="diagram-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" style="margin: 0 auto;"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect></svg>
+                <div class="diagram-node-title">Self-Managed Kafka</div>
+                <div class="diagram-node-desc">High maintenance burden &amp; hardware costs</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Dual</span>
+                <div class="connector-line"></div>
+                <span>Mirror</span>
+              </div>
+
+              <div class="diagram-node highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <div class="diagram-node-title">MirrorMaker 2 &amp; Schema Registry</div>
+                <div class="diagram-node-desc">Zero-downtime replication &amp; governance</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Cutover</span>
+                <div class="connector-line"></div>
+                <span>Stream</span>
+              </div>
+
+              <div class="diagram-node highlight">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" style="margin: 0 auto;"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                <div class="diagram-node-title">Confluent Cloud Managed</div>
+                <div class="diagram-node-desc">Multi-zone SLA, auto-scale &amp; enterprise support</div>
+              </div>
+
+              <div class="diagram-connector">
+                <span>Save</span>
+                <div class="connector-line"></div>
+                <span>~65%</span>
+              </div>
+
+              <div class="diagram-node">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" style="margin: 0 auto;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div class="diagram-node-title">Enterprise Services</div>
+                <div class="diagram-node-desc">Seamless consumer cutover with zero downtime</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blueprint-meta-grid">
+            <div class="blueprint-narrative">
+              <h4>Confluent Cloud Migration &amp; ~65% Annual OpEx Savings</h4>
+              <p>
+                Spearheaded the architectural migration from on-premise self-managed Kafka clusters to fully managed Confluent Cloud. Established central data governance, schema validation, and eliminated broker node maintenance toil while cutting platform operational costs by approximately 65% every year.
+              </p>
+              <div class="profile-tags" style="justify-content: flex-start;">
+                <span class="tag-chip">Confluent Cloud</span>
+                <span class="tag-chip">Cloud Migration</span>
+                <span class="tag-chip">FinOps</span>
+                <span class="tag-chip">Zero-Downtime</span>
+                <span class="tag-chip">Data Governance</span>
+              </div>
+            </div>
+            <div class="blueprint-takeaways">
+              <h5>Architectural Value</h5>
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> ~65% annual infrastructure &amp; operations savings</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 99.99% multi-region SLA backed by Confluent</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero interruption to healthcare partner data flows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Case Studies Section
+       ====================================================================== -->
+  <section id="case-studies" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Production Impact</span>
+        <h2 class="section-title">Featured Enterprise Case Studies</h2>
+        <p class="section-subtitle">
+          Real-world outcomes delivered in high-stakes environments where reliability, cost efficiency, and performance are mission-critical.
+        </p>
+      </div>
+
+      <div class="case-studies-grid">
+        <!-- Case Study 1 -->
+        <article class="case-card">
+          <div class="case-header">
+            <span class="case-client-badge">Cardinal Health (Fortune 15)</span>
+            <span class="case-role-tag">Staff Software Engineer</span>
+          </div>
+          <h3 class="case-title">Next-Gen Event-Driven Healthcare Reporting Platform</h3>
+          
+          <div class="case-impact-box">
+            <div class="case-impact-metric">Thousands of U.S. Hospitals Powered</div>
+            <div class="case-impact-sub">Sub-second reporting latency &amp; zero data loss SLA</div>
+          </div>
+
+          <p class="case-description">
+            Shaped and delivered the foundational streaming architecture powering mission-critical clinical and inventory reporting across thousands of hospital systems nationwide.
+          </p>
+
+          <ul class="case-bullets">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Designed reusable event-driven streaming building blocks with Kafka, Kafka Streams, and Elasticsearch.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Drove the architectural evolution from legacy monoliths to resilient Java &amp; Spring Boot microservices.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Raised the bar on automated testing, CI/CD pipelines, and zero-downtime blue/green deployments.</span>
+            </li>
+          </ul>
+
+          <div class="case-tech-stack">
+            <span class="case-tech-pill">Apache Kafka</span>
+            <span class="case-tech-pill">Kafka Streams</span>
+            <span class="case-tech-pill">Elasticsearch</span>
+            <span class="case-tech-pill">Java / Spring Boot</span>
+            <span class="case-tech-pill">Docker &amp; K8s</span>
+          </div>
+        </article>
+
+        <!-- Case Study 2 -->
+        <article class="case-card">
+          <div class="case-header">
+            <span class="case-client-badge">Cardinal Health Platform</span>
+            <span class="case-role-tag">Software Eng Team Lead</span>
+          </div>
+          <h3 class="case-title">Enterprise Kafka Modernization to Confluent Cloud</h3>
+          
+          <div class="case-impact-box">
+            <div class="case-impact-metric">~65% Yearly Operational Cost Reduction</div>
+            <div class="case-impact-sub">Eliminated cluster maintenance downtime &amp; reduced FinOps burn</div>
+          </div>
+
+          <p class="case-description">
+            Led an engineering team to modernize the enterprise messaging backbone, transitioning from high-friction self-managed Kafka clusters to fully managed Confluent Cloud.
+          </p>
+
+          <ul class="case-bullets">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Introduced Backend-for-Frontend (BFF) and API Gateway patterns, decoupling client deliveries.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Standardized schema governance, data contracts, and client onboarding templates across cross-functional teams.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Coached and led engineers through structured 1:1s, code reviews, and architectural decision records (ADRs).</span>
+            </li>
+          </ul>
+
+          <div class="case-tech-stack">
+            <span class="case-tech-pill">Confluent Cloud</span>
+            <span class="case-tech-pill">BFF Pattern</span>
+            <span class="case-tech-pill">API Gateway</span>
+            <span class="case-tech-pill">Schema Registry</span>
+            <span class="case-tech-pill">FinOps</span>
+          </div>
+        </article>
+
+        <!-- Case Study 3 -->
+        <article class="case-card">
+          <div class="case-header">
+            <span class="case-client-badge">Sword Group / LeShop.ch (Switzerland)</span>
+            <span class="case-role-tag">Senior Software Consultant</span>
+          </div>
+          <h3 class="case-title">Swiss E-Commerce &amp; Logistics Microservices Transition</h3>
+          
+          <div class="case-impact-box">
+            <div class="case-impact-metric">Zero-Bottleneck Peak Logistics Handling</div>
+            <div class="case-impact-sub">High-concurrency order fulfillment for major Swiss retail market</div>
+          </div>
+
+          <p class="case-description">
+            Partnered as a trusted consultant with major Swiss enterprise clients, guiding the strategic transition of LeShop.ch from a monolithic core into decoupled microservices.
+          </p>
+
+          <ul class="case-bullets">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Decomposed core retail logistics workflows and integrated third-party supply chain and warehouse APIs.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Collaborated in an international distributed Scrum team, guaranteeing predictable execution and release quality.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Enhanced system resiliency under seasonal high-volume traffic spikes.</span>
+            </li>
+          </ul>
+
+          <div class="case-tech-stack">
+            <span class="case-tech-pill">Microservices</span>
+            <span class="case-tech-pill">Java / Spring</span>
+            <span class="case-tech-pill">RESTful APIs</span>
+            <span class="case-tech-pill">Logistics Integration</span>
+            <span class="case-tech-pill">CI/CD</span>
+          </div>
+        </article>
+
+        <!-- Case Study 4 -->
+        <article class="case-card">
+          <div class="case-header">
+            <span class="case-client-badge">Sword Group / SGS TransitNet</span>
+            <span class="case-role-tag">Senior Software Engineer</span>
+          </div>
+          <h3 class="case-title">Security-Critical Digitally Signed Customs Transit Engine</h3>
+          
+          <div class="case-impact-box">
+            <div class="case-impact-metric">100% Cryptographic Compliance &amp; Integrity</div>
+            <div class="case-impact-sub">Cross-border European customs data transit with zero tamper risk</div>
+          </div>
+
+          <p class="case-description">
+            Built and maintained mission-critical software enabling secure, legally binding, digitally signed customs communication between international logistics operators and customs authorities.
+          </p>
+
+          <ul class="case-bullets">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Implemented digital signature validation, PKI security standards, and non-repudiation audit trails.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Integrated SOAP/XML enterprise protocols and secure gateways compliant with European standards.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Established automated integration tests ensuring flawless compliance against customs specifications.</span>
+            </li>
+          </ul>
+
+          <div class="case-tech-stack">
+            <span class="case-tech-pill">Digital Signatures &amp; PKI</span>
+            <span class="case-tech-pill">Security-Critical</span>
+            <span class="case-tech-pill">SOAP / XML</span>
+            <span class="case-tech-pill">Java</span>
+            <span class="case-tech-pill">Compliance</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Experience & Leadership Track Record
+       ====================================================================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Professional History</span>
+        <h2 class="section-title">Track Record &amp; Leadership Journey</h2>
+        <p class="section-subtitle">
+          Over 12 years of hands-on technical excellence, architectural evolution, and people mentorship.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <!-- Role 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot current"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineering Team Lead</h3>
+                <div class="timeline-company">
+                  <span>Cardinal Health</span>
+                  <span>• El Zalka</span>
+                </div>
+              </div>
+              <span class="timeline-period">April 2025 — Present</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lead a team of 4 senior engineers modernizing enterprise platform architecture to enhance performance, scalability, and long-term maintainability.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Introduced Backend-for-Frontend (BFF) and API Gateway patterns, reducing system coupling and empowering independent service ownership.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Migrated self-managed Kafka platform to Confluent Cloud, elevating system reliability, data governance, and slashing yearly operational costs by ~65%.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cultivate engineering growth through regular 1:1s, structured development conversations (OTTT/SMART), and architectural reviews.</span>
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag-chip">Team Leadership</span>
+              <span class="tag-chip">Confluent Cloud</span>
+              <span class="tag-chip">BFF Architecture</span>
+              <span class="tag-chip">Kafka</span>
+              <span class="tag-chip">Cost Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Staff Software Engineer</h3>
+                <div class="timeline-company">
+                  <span>Cardinal Health</span>
+                  <span>• El Zalka</span>
+                </div>
+              </div>
+              <span class="timeline-period">January 2020 — April 2025</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Helped shape and deliver the core foundation of a next-generation, event-driven reporting platform powering mission-critical systems used by thousands of U.S. hospitals.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Built reusable Event-Driven Architecture (EDA) components with Kafka, Kafka Streams, Kafka Connect, and Elasticsearch.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Drove legacy monolith decomposition to a service-based architecture with Java and Spring Boot, dramatically increasing resilience and release frequency.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Acted as technical lead providing architecture guidance, raising the bar on code quality, automated test coverage, and CI/CD automation.</span>
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag-chip">Distributed Systems</span>
+              <span class="tag-chip">Kafka Streams</span>
+              <span class="tag-chip">Elasticsearch</span>
+              <span class="tag-chip">Java / Spring Boot</span>
+              <span class="tag-chip">Healthcare IT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Software Engineer &amp; Consultant</h3>
+                <div class="timeline-company">
+                  <span>Sword Group</span>
+                  <span>• Beirut</span>
+                </div>
+              </div>
+              <span class="timeline-period">June 2016 — December 2019</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Collaborated directly with major Swiss enterprise clients as a trusted software consultant, shipping reliable production outcomes in demanding environments.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Supported the monolith-to-microservices transition, third-party logistics API integrations, and checkout workflow optimization for LeShop.ch.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Engineered and maintained security-critical software enabling legally binding digitally signed customs communication for SGS TransitNet.</span>
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag-chip">Consulting</span>
+              <span class="tag-chip">Swiss Enterprise Clients</span>
+              <span class="tag-chip">Microservices</span>
+              <span class="tag-chip">Digital Signatures</span>
+              <span class="tag-chip">SOA / SOAP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full Stack Software Developer</h3>
+                <div class="timeline-company">
+                  <span>Voicelynx Inc</span>
+                  <span>• Beirut</span>
+                </div>
+              </div>
+              <span class="timeline-period">March 2014 — May 2016</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Engineered real-time telecom solutions for call management, high-concurrency handling, billing, and account portals serving 30+ telecom shops.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Developed, deployed, and maintained web and mobile applications (Android &amp; iOS) with an emphasis on low latency and real-time performance.</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Optimized database performance through stored procedures, query tuning, and index analysis.</span>
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag-chip">Concurrency</span>
+              <span class="tag-chip">Real-Time Telecom</span>
+              <span class="tag-chip">Billing Systems</span>
+              <span class="tag-chip">SQL Performance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Master &amp; Bachelor of Business Computer</h3>
+                <div class="timeline-company">
+                  <span>Lebanese University</span>
+                  <span>• Beirut</span>
+                </div>
+              </div>
+              <span class="timeline-period">2010 — 2018</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">
+              Master of Business Computer (Nov 2016 – Nov 2018) &bull; Bachelor of Business Computer (Nov 2010 – Jun 2013). Advanced coursework in distributed database systems, software engineering methodologies, information systems, and enterprise architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Technical Radar & Competencies
+       ====================================================================== -->
+  <section id="tech-radar" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Technical Competencies</span>
+        <h2 class="section-title">Architecture &amp; Technology Radar</h2>
+        <p class="section-subtitle">
+          Core technologies, frameworks, and patterns vetted across a decade of enterprise production.
+        </p>
+      </div>
+
+      <div class="radar-categories">
+        <!-- Category 1 -->
+        <div class="radar-card">
+          <div class="radar-card-header">
+            <div class="radar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="radar-card-title">Architecture &amp; Systems</h3>
+          </div>
+          <div class="radar-items-list">
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Distributed Systems &amp; EDA</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Microservices &amp; Strangler Fig</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 92%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>BFF &amp; API Gateway Patterns</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>C4 Modeling &amp; ADR Governance</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="radar-card">
+          <div class="radar-card-header">
+            <div class="radar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="radar-card-title">Streaming &amp; Event Mesh</h3>
+          </div>
+          <div class="radar-items-list">
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Apache Kafka &amp; Confluent Cloud</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Kafka Streams &amp; State Stores</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 92%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Kafka Connect &amp; CDC</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 88%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Apache Flink &amp; Stream SQL</span>
+                <span class="radar-level">Proficient</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 78%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="radar-card">
+          <div class="radar-card-header">
+            <div class="radar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3 class="radar-card-title">Backend &amp; Languages</h3>
+          </div>
+          <div class="radar-items-list">
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Java (8 / 11 / 17 / 21)</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Spring Boot &amp; Spring Cloud</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 94%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>REST, SOAP &amp; API Contracts</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Concurrency &amp; High-Throughput IO</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 86%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="radar-card">
+          <div class="radar-card-header">
+            <div class="radar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="radar-card-title">Data &amp; Search</h3>
+          </div>
+          <div class="radar-items-list">
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Elasticsearch &amp; Query Tuning</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>PostgreSQL &amp; MySQL</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 88%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Schema Registry (Avro / JSON)</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 92%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Redis &amp; Distributed Caching</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 84%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="radar-card">
+          <div class="radar-card-header">
+            <div class="radar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <h3 class="radar-card-title">Cloud, DevOps &amp; FinOps</h3>
+          </div>
+          <div class="radar-items-list">
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Cloud Migration &amp; Cost Reduction</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 94%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>CI/CD Automation &amp; Pipelines</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Docker &amp; Containerization</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 88%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Automated Testing &amp; Testcontainers</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 89%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="radar-card">
+          <div class="radar-card-header">
+            <div class="radar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="radar-card-title">Leadership &amp; Delivery</h3>
+          </div>
+          <div class="radar-items-list">
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Engineering Team Leadership</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 92%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>1:1 Coaching (OTTT / SMART)</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Agile / Scrum &amp; Predictable Delivery</span>
+                <span class="radar-level">Expert</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="radar-item">
+              <div class="radar-item-top">
+                <span>Stakeholder &amp; Executive Alignment</span>
+                <span class="radar-level">Advanced</span>
+              </div>
+              <div class="radar-bar"><div class="radar-progress" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Advisory Engagement Models
+       ====================================================================== -->
+  <section id="engagement" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Collaboration Framework</span>
+        <h2 class="section-title">Advisory Engagement Models</h2>
+        <p class="section-subtitle">
+          Tailored consulting formats designed for technical leaders, CTOs, and engineering organizations seeking decisive architecture guidance.
+        </p>
+      </div>
+
+      <div class="engagement-grid">
+        <!-- Model 1 -->
+        <div class="engagement-card">
+          <div class="engagement-tier">01 &bull; Diagnostic</div>
+          <h3 class="engagement-title">Architecture Assessment &amp; Audit</h3>
+          <p class="engagement-desc">
+            A focused deep-dive into your system architecture, data flow bottlenecks, single points of failure, and cloud spending inefficiencies.
+          </p>
+          <div class="engagement-duration">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Timeline: 1 — 2 Weeks</span>
+          </div>
+          <ul class="engagement-includes">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Codebase, topology &amp; infrastructure review</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Performance &amp; cloud cost drain identification</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Executive debrief &amp; actionable C4 target blueprints</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Request Assessment</a>
+        </div>
+
+        <!-- Model 2 (Featured) -->
+        <div class="engagement-card featured">
+          <div class="engagement-badge-pos">
+            <span class="badge badge-cyan">Most Requested</span>
+          </div>
+          <div class="engagement-tier">02 &bull; Transformation</div>
+          <h3 class="engagement-title">Architecture Modernization Sprint</h3>
+          <p class="engagement-desc">
+            Hands-on technical leadership to design and execute a specific architectural shift: Kafka migration, BFF introduction, or monolith decomposition.
+          </p>
+          <div class="engagement-duration">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 16 14"></polyline></svg>
+            <span>Timeline: 4 — 12 Weeks (Sprint-based)</span>
+          </div>
+          <ul class="engagement-includes">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Target architecture design &amp; ADR documentation</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Zero-downtime migration pipeline &amp; POC execution</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Hands-on mentoring &amp; team enablement</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Start Sprint Engagement</a>
+        </div>
+
+        <!-- Model 3 -->
+        <div class="engagement-card">
+          <div class="engagement-tier">03 &bull; Strategic</div>
+          <h3 class="engagement-title">Fractional Architecture Advisory</h3>
+          <p class="engagement-desc">
+            Ongoing high-level advisory for CTOs and engineering managers needing a seasoned sounding board for architecture reviews, hiring, and tech strategy.
+          </p>
+          <div class="engagement-duration">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 16 14"></polyline></svg>
+            <span>Timeline: Monthly Retainer (Flexible hours)</span>
+          </div>
+          <ul class="engagement-includes">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Bi-weekly architecture &amp; RFC design reviews</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Vendor &amp; cloud platform evaluation</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Direct coaching for Senior &amp; Staff engineers</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Inquire About Retainer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Contact & Advisory Inquiries
+       ====================================================================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-eyebrow">Initiate Contact</span>
+          <h2 class="contact-title">Let's Discuss Your Architecture Challenges</h2>
+          <p class="contact-text">
+            Whether you are evaluating a monolith-to-microservices modernization, optimizing Kafka and cloud streaming costs, or looking for a fractional architecture leader, let's connect.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:mahmoudhachem.d@gmail.com" class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">Email Directly</span>
+                <span class="channel-val">mahmoudhachem.d@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/hachemmahmoud/" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">LinkedIn Profile</span>
+                <span class="channel-val">linkedin.com/in/hachemmahmoud</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/mhashem" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">GitHub Account</span>
+                <span class="channel-val">github.com/mhashem</span>
+              </div>
+            </a>
+
+            <a href="tel:+96171244839" class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-label">Phone &amp; Mobile</span>
+                <span class="channel-val">+961 71 244 839</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-actions-row">
+            <a href="assets/Mahmoud_Hachem_CV.pdf" target="_blank" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path></svg>
+              <span>Download CV (PDF)</span>
+            </a>
+            <button class="btn btn-outline btn-copy-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email Address</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Inquiry Form -->
+        <form class="contact-form" id="inquiry-form">
+          <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.25rem;">Direct Advisory Inquiry</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            Fill in the parameters below to launch a structured inquiry directly to Mahmoud's inbox.
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-name">Your Full Name *</label>
+            <input type="text" id="inq-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-company">Company / Organization</label>
+            <input type="text" id="inq-company" class="form-input" placeholder="e.g. HealthTech Systems Inc.">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-service">Focus Area / Service Interest *</label>
+            <select id="inq-service" class="form-select" required>
+              <option value="Enterprise Architecture Assessment">Enterprise Architecture Assessment (Audit &amp; C4 Blueprint)</option>
+              <option value="Event-Driven Architecture &amp; Kafka">Event-Driven Architecture &amp; Kafka Streaming</option>
+              <option value="Monolith to Microservices / BFF Modernization">Monolith to Microservices / BFF Modernization</option>
+              <option value="Cloud Cost Optimization &amp; FinOps">Cloud Cost Optimization &amp; FinOps Migration</option>
+              <option value="Fractional Architecture Advisory">Fractional Architecture Advisory / Mentorship</option>
+              <option value="General Technical Inquiry">Other / General Technical Discussion</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-message">Brief Description of Current System / Challenge *</label>
+            <textarea id="inq-message" class="form-textarea" placeholder="Tell me briefly about your current architecture, throughput requirements, or platform challenge..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
+            <span>Send Advisory Inquiry</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       Site Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-copy">&copy; 2026 Mahmoud Hachem. All rights reserved.</span>
+        <span class="footer-sub">Software Architecture &amp; Enterprise Solutions Consultant &bull; Beirut, Lebanon</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/hachemmahmoud/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/mhashem" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="assets/Mahmoud_Hachem_CV.pdf" target="_blank" class="footer-link">Resume (PDF)</a>
+        <a href="#hero" class="footer-link" title="Scroll back to top">Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
